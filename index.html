@@ -1,0 +1,152 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="painel2.css">
+    <link rel="stylesheet" href="painel1.css">
+    <style>
+        p {
+            color: green;
+        }
+
+        #primeira-div {
+            color: purple;
+            font-weight: bold;
+        }
+
+        #terceira-div {
+            color: pink;
+            font-weight: lighter;
+            text-decoration: line-through;
+        }
+
+        .outras-divs {
+            color: orange;
+            font-weight: bolder;
+            text-decoration: underline;
+        }
+
+        .faixa {
+            background-color: skyblue;
+        }
+
+        .bloco {
+            background-color: yellow;
+        }
+
+        .container {
+            width: 15rem;
+            height: 10rem;
+            background-color: skyblue;
+            border: 1px solid green;
+            box-shadow: .5rem .5rem .5rem .5rem yellow;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .item {
+            width: 2rem;
+            height: 2rem;
+            background-color: red;
+            margin:.3rem;
+        }
+    </style>
+</head>
+
+<body>
+    <p style="color: red;">Olá, Mundo!</p>
+
+    <div id="primeira-div">
+        Esta é a primeira DIV.
+    </div>
+
+    <div class="outras-divs">
+        Esta é a segunda DIV.
+    </div>
+
+    <div id="terceira-div" class="outras-divs">
+        Esta é a terceira DIV.
+    </div>
+
+    <div class="faixa bloco">
+        Esta é a quarta DIV.
+    </div>
+
+    <div class="bloco faixa">
+        Esta é a quarta DIV.
+    </div>
+
+    <div class="painel1 painel2">Painel 1</div>
+    <div class="painel2 painel1">Painel 2</div>
+
+    <script>
+        alert("Olá, mundo 1!");
+        document.write("Olá, mundo 2! <br>");
+        console.log("Olá, mundo 3!");
+
+        var nome = "Ana";
+        alert("Olá, " + nome + "!");
+        document.write("Olá, " + nome + "! <br>");
+        console.log("Olá, " + nome + "!");
+
+        nome = prompt("Infome o seu nome:");
+        alert("Olá, " + nome + "!");
+        document.write("Olá, " + nome + "! <br>");
+        console.log("Olá, " + nome + "!");
+
+        nome = prompt("Infome o seu nome:", "");
+        alert("Olá, " + nome + "!");
+        document.write("Olá, " + nome + "! <br>");
+        console.log("Olá, " + nome + "!");
+
+        nome = prompt("Infome o seu nome:", "nome");
+        alert("Olá, " + nome + "!");
+        document.write("Olá, " + nome + "! <br>");
+        console.log("Olá, " + nome + "!");
+
+        let num1, num2, soma, subtracao, multiplicacao, divisao, resto;
+        num1 = 7;
+        num2 = 2;
+
+        soma = num1 + num2;
+        subtracao = num1 - num2;
+        multiplicacao = num1 * num2;
+        divisao = num1 / num2;
+        resto = num1 % num2;
+
+        document.write(`${num1} + ${num2} = ${soma} </br>`);
+        document.write(`${num1} - ${num2} = ${subtracao} </br>`);
+        document.write(`${num1} * ${num2} = ${multiplicacao} </br>`);
+        document.write(`${num1} / ${num2} = ${divisao} </br>`);
+        document.write(`${num1} % ${num2} = ${resto} </br>`);
+
+        document.write("log: " + Math.log2(8) + "</br>");
+        document.write("raiz: " + Math.sqrt(4) + "</br>");
+        document.write("raiz: " + Math.pow(2, 4) + "</br>");
+        document.write("PI: " + Math.PI + "</br>");
+        document.write("e: " + Math.E + "</br>");
+        document.write("log_e: " + Math.log(Math.E) + "</br>");
+        document.write("<div class=\"painel1\">log_10: " + Math.log10(100) + "</div></br>");
+
+    </script>
+
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+        <div class="item">10</div>
+        <div class="item">11</div>
+        <div class="item">12</div>
+        <div class="item">13</div>
+        <div class="item">14</div>
+    </div>
+</body>
+
+</html>
